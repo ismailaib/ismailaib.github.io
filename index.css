@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Rubik:wght@600&display=swap');
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  /* INTRO */
+.Intro {
+    /* The image link */
+    background-image: url("image.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    transition-duration: 0.3s;
+}
+.content {
+    padding: 16px;
+  }
+  
+.sticky {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    width: 97.50%;
+}
+  
+.sticky {
+    padding-top: 60px;
+} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  font-size: 20px;
+  padding:  0 0 0 3rem; 
+}
+
+li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition-duration:1s;
+}
+
+li a:hover {
+  font-size:30px
+}
+h1{
+    font-family: 'Rock Salt', cursive;
+}
+.text{
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem 50rem 0px 4rem;
+    user-select: none;
+}
+.text h1{
+    background: -webkit-linear-gradient(#ffffff, #ffaa00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text h1:hover{
+    background: -webkit-linear-gradient(#ffaa00, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.text p{
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 25px;
+}
+.button {
+    border: 5px#fff;
+    background-color: #ffffff00;
+    color: #ffff;
+    text-align: center;
+    font-size: 21px;
+    padding: 2rem 0rem 0rem 0rem;
+    transition: all 0.5s;
+  }
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border: #fff 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+  }
+
+#myDIV {
+  display: none;
+  position: absolute;
+  width: 30rem;
+  height: 12rem;
+  top: 30%;
+  left: 53%;
+  background-color: #ffffff85;
+  box-shadow: inset 1px 0px 7px 3px #ffffff;
+  backdrop-filter: blur(3px);
+  animation-name: example;
+  animation-duration: 2s;
+}
+@keyframes example {
+  0%   {left:110%; top:30%;}
+  100% {left:53%; top: 30%;}
+}
+
+#myDIV img{
+  position: relative;
+  box-shadow: 1px 0px 20px 8px #ffffff;
+  top: -10%;
+  left: -5%;
+  width: 10rem;
+  height: 6rem;
+}
+#myDIV h1{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -60%;
+  left: 10%;
+  font-size: 40px;
+  font-family: 'Audiowide', cursive;
+  background: -webkit-linear-gradient(#ffffff, #9fbcfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#myDIV p{
+  position: relative;
+  top: -60%;
+  left: 2%;
+  padding-right: 1rem;
+}
+#myDIV a{
+  color: #fff;
+  position: relative;
+  top: -8.5rem;
+  left: 23rem;
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+}
+/* Robotics  */
+.Robotics {
+  /* The image link */
+  background-image: url("image.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
