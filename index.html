@@ -1,9 +1,151 @@
-<html>
-  <head>
-    <title>Ismail Aib</title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismailaib</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-container">
+            <img src="logo.png" alt=".png">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><button>Download CV</button></li>
+            </ul>
+            <div class="icons">
+            <button id="open-menu-btn"><i class="uil uil-bars" style="    background: #101b42;
+              font-size: 1.8rem;
+              color: #ffffff;
+              cursor: pointer;"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply" style="    background: #101b42;
+              font-size: 1.8rem;
+              color: #ffffff;
+              cursor: pointer;"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="forms">
+        <span class="dot"></span>
+        <span class="dot2"></span>        
+    </div>
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hi there i’m</div>
+                <div class="text-2">Ismail-aib</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="scroll">
+        <a href="#Services">
+            <h4>scroll</h4>
+            <img src="Arrow 1.png" alt="">
+        </a>
+    </div>
+    <div class="cards" id="Services">
+        <div class="card card-1" >
+          <div class="card__icon"><img src="search.png" alt="" style="width: 3rem;"><h1>Website Review</h1></div>
+          <h2 class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+          <p class="card__apply">
+            <a class="card__link" href="#">Apply Now</a>
+          </p>
+        </div>
+        <div class="card card-2">
+          <div class="card__icon"><img src="text.png" alt="" style="width: 3rem;"><h1>User Experience Design</h1></div>
+          <h2 class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+          <p class="card__apply">
+            <a class="card__link" href="#">Apply Now</a>
+          </p>
+        </div>
+        <div class="card card-3">
+          <div class="card__icon"><img src="web.png" alt="" style="width: 3rem;"><h1>Tailored Development</h1></div>
+          <h2 class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+          <p class="card__apply">
+            <a class="card__link" href="#">Apply Now</a>
+          </p>
+        </div>
+        <div class="card card-4">
+          <div class="card__icon"><img src="edit.png" alt="" style="width: 3rem;"><h1>Video Editor</h1></div>
+          <h2 class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+          <p class="card__apply">
+            <a class="card__link" href="#">Apply Now</a>
+          </p>
+        </div>
+            <button>Find out more about my services</button>
+      </div>
+    </div>
+
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>    
+
+    <figure data-rocket id="About">
+      <img src="Frame 1.png" alt="" data-rocket-image>
+      <h1>ISMAILAIB</h1>
+      <p>I’m a self-learning student basing on my
+        simple creativity and knowledges to 
+        build my own websites.</p>
+        <button >Download CV</button>
+    </figure>
+
+    <div class="contact">
+      <a href=""><img src="instagram.png" alt=".png"></a>
+      <a href=""><img src="linkedin.png" alt=".png"></a>
+      <a href=""><img src="sololearn.png" alt=".png"></a>
+      <a href=""><img src="github.png" alt=".png"></a>
+  </div>
+
+  <div class="cont" id="Contact">
+    <div class="row input-container">
+        <div class="col-xs-12">
+          <div class="styled-input wide">
+            <input type="text" required />
+            <label>Email</label> 
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="styled-input">
+            <input type="text" required />
+            <label>Name</label> 
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="styled-input wide">
+            <textarea required></textarea>
+            <label>Message</label>
+          </div>
+        </div>
+          <div class="submit-btn"><button>Sumbit</button></div>
+        </div>
+    </div>
+  </div>
   
-  <body>
-    Here is my new website
-  </body>
+
+  <footer>
+    created by me
+  </footer>
+    <script src="script.js"></script>
+</body>
 </html>
