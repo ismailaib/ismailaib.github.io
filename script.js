@@ -1,4 +1,5 @@
- // navbar
+
+// navbar
 
 const menu = document.querySelector(".nav-menu");
 const menuBtn = document.querySelector("#open-menu-btn");

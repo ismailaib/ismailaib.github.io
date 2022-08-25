@@ -50,7 +50,7 @@ a {
 
 nav {
     background: transparent;
-    width: 100vw;
+    width: 100%;
     height: 5rem;
     position: fixed;
     top: 0;
@@ -158,10 +158,9 @@ nav .icons {
     width: 7rem;
     background-color: var(--color-primary);
     top: 50%;
-    left: 91%;
+    right: 0;
     animation-name: dot2;
     animation-duration: 2s;
-    
 }
 
 .contact {
@@ -206,43 +205,41 @@ nav .icons {
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
-
-.home .max-width{
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.home {
   width: 100%;
   display: flex;
   line-height: 6rem;
+  user-select: none;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  animation-name: text-1;
+  animation-duration: 6s;
 }
 
-.home .home-content .text-1{
+.home .text-1{
     font-size: 27px;
     color: #ffffff;
     
 }
 
-.home .home-content .text-2{
+.home .text-2{
     font-size: 7rem;
     font-weight: 600;
 }
-.home .home-content .text-3{
+.home .text-3{
     font-size: 3rem;
 }
-.home .home-content .text-3 span{
+.home .text-3 span{
     color: var(--color-primary);
 }
-.home {
-  animation-name: text-1;
-  animation-duration: 6s;
-}
 
-.home-content{
-    user-select: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 26%;
-    left: 30%;
-}
 
 .scroll a {
     display: flex;

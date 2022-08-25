@@ -1,5 +1,43 @@
-
 @media screen and (max-width: 1024px) {
+    .nav-menu {
+        gap: 2rem;
+    }
+    .home {
+        gap: 2rem;
+    }
+    .home .text-1 {
+        font-size: 2.688rem;
+        color: #ffffff;
+    }
+    .home .text-2 {
+        font-size: 8rem;
+        font-weight: 600;
+    }
+    .home .text-3 {
+        font-size: 4rem;
+    }
+    .scroll a {
+        top : 80%
+    }
+    .scroll-up-btn {
+        display: none;
+    }
+    .card {
+        margin: 20px;
+        padding: 20px;
+        width: 373px;
+    }
+    .card h1 {
+        font-size: 26px;
+    }
+    .card__title {
+        font-size: 20px;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+
     nav .icons {
         display: inline-block;
         background: transparent;
@@ -62,158 +100,59 @@ opacity: 1;
         display: none;
     }
 
-    /*home*/
-    .home-content {
-        left: 26%;
-    }
-    .scroll-up-btn {
-        display: none;
-    }
-    .card {
-        margin: 20px;
-        padding: 20px;
-        width: 373px;
-    }
-    .card h1 {
-        font-size: 26px;
-    }
-    .card__title {
-        font-size: 20px;
-    }
-    figure img {
-        top: 241%;
-        width: 17rem;
-    }
-    figure h1 {
-        font-size: 4rem;
-        top: 240%;
-    }
-    figure p {
-        top: 258%;
-        font-size: 1rem;
-    }
-    figure button {
-        top: 272%;
-    }
-    .cont {
-        top: 303%;
-        left: 18%;
-    }
+.scroll,.scroll-up-btn,
+.contact {
+    display: none;
 }
 
-@media screen and (max-width: 768px) {
-    nav {
-        width: 111vw;
-    }
-    
     /*home*/
     .forms .dot2 {
         height: 11rem;
-        width: 5rem;
+        width: 3rem;
         top: 50%;
-        left: 91%;
     }
-    .home-content {
-        left: 35%;
+    .forms .dot {
+        height: 12rem;
+        width: 12rem;
     }
-    .home .home-content .text-1 {
-        font-size: 20px;
-    }  
-    .home .home-content .text-2 {
-        font-size: 5rem;
+    .home {
+        gap: 0.4rem;
     }
-    .home .home-content .text-3 {
+    .home .text-1 {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    .home .text-2 {
+        font-size: 6rem;
+        font-weight: 600;
+    }
+    .home .text-3 {
         font-size: 2rem;
     }
-    .home .max-width {
-        line-height: 5rem;
-    }
     .scroll a {
-        left: 55%;
-    }
-    .contact {
-    top: 64%;
+        left: 47.5%;
     }
     .scroll-up-btn {
         display: none;
     }
     .cards {
         justify-content: center;
-        left: 15%;
-    }
+        left: 0%;    }
     .card h1 {
         font-size: 26px;
+
     }
     .card__title {
         font-size: 20px;
     }
-    figure img {
-        top: 379%;
-        width: 15rem;
-    }
-    figure h1 {
-        left: 54%;
-        font-size: 3rem;
-        top: 376%;
-    }
-    figure p {
-        top: 393%;
-        font-size: 1rem;
-        left: 54.4%;
-        padding: 0 4rem 0 0;
-    }
-    figure button {
-        top: 413%;
-        left: 54%;
-    }    
-    .cont {
-        top: 500%;
-        left: 18%;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .max-width{
-        padding: 0 50px;
-    }
+   
 }
 
 @media screen and (max-width: 428px) {
-    nav {
-        width: 190vw;
+    .div {
+        width: 200%;
     }
-    
-    /*home*/
-    
-    .forms .dot2 {
-        height: 11rem;
-        width: 5rem;
-        top: 26%;
-        left: 91%;
-    }
-    .home-content {
-        left: 12rem;
-        position: relative;
-        top: 5rem;
-    }
-    .home .home-content .text-1 {
-        font-size: 20px;
-    }  
-    .home .home-content .text-2 {
-        font-size: 5rem;
-    }
-    .home .home-content .text-3 {
-        font-size: 2rem;
-    }
-    .home .max-width {
-        line-height: 5rem;
-    }
-    .scroll a {
-        left: 90%;
-    }
-    .contact {
-    top: 37%;
-    }
+
     .scroll-up-btn {
         display: none;
     }
@@ -227,30 +166,5 @@ opacity: 1;
     .card__title {
         font-size: 20px;
     }
-    figure img {
-        top: 379%;
-        left: 5rem;
-        width: 15rem;
-    }
-    figure h1 {
-        left: 88%;
-        font-size: 3rem;
-        top: 376%;
-    }
-    figure p {
-        top: 107rem;
-        font-size: 1rem;
-        position: relative;
-        left: 89.4%;
-        padding: 0 4rem 0 0;
-    }
-    figure button {
-        top: 108rem;
-        left: 88%;
-        position: relative;
-    }    
-    .cont {
-        top: 500%;
-        left: 18%;
-    }
+    
 }
