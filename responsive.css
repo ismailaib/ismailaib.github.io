@@ -1,4 +1,7 @@
 @media screen and (max-width: 1024px) {
+    body {
+        display: inline-block;
+    }
     .nav-menu {
         gap: 2rem;
     }
@@ -23,21 +26,20 @@
         display: none;
     }
     .card {
-        margin: 20px;
-        padding: 20px;
-        width: 373px;
+        grid-column-end: span 6;
+      }
+    .full h3 {
+        font-size: 3rem;
     }
-    .card h1 {
-        font-size: 26px;
-    }
-    .card__title {
-        font-size: 20px;
-    }
-   
+    .full p {
+        font-size: 1.5rem;
+    
 }
-
+}
 @media screen and (max-width: 768px) {
-
+body {
+    display: inline-block;
+}
     nav .icons {
         display: inline-block;
         background: transparent;
@@ -100,7 +102,7 @@ opacity: 1;
         display: none;
     }
 
-.scroll,.scroll-up-btn,
+.scroll-up-btn,
 .contact {
     display: none;
 }
@@ -110,6 +112,7 @@ opacity: 1;
         height: 11rem;
         width: 3rem;
         top: 50%;
+        position: fixed;
     }
     .forms .dot {
         height: 12rem;
@@ -135,36 +138,42 @@ opacity: 1;
     .scroll-up-btn {
         display: none;
     }
-    .cards {
-        justify-content: center;
-        left: 0%;    }
-    .card h1 {
-        font-size: 26px;
-
+    main {
+        grid-gap: 20px;
+      }
+      .card {
+        grid-column-end: span 12;
+      }
+      .full h3 {
+        font-size: 2.5rem;
     }
-    .card__title {
-        font-size: 20px;
-    }
-   
+    .full p {
+        font-size: 1rem;
 }
-
+}
 @media screen and (max-width: 428px) {
     .div {
         width: 200%;
     }
-
+    .div1 {
+        width: 200%;
+    }
     .scroll-up-btn {
         display: none;
     }
     .cards {
+        grid-column: 2 / span 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+        width: 33rem;
+      }
+      .card {
+        grid-column-end: span 6;
+      }
+
+      .about {
+        display: flex;
         justify-content: center;
-        left: 40%;
+        width: 200%;
     }
-    .card h1 {
-        font-size: 26px;
-    }
-    .card__title {
-        font-size: 20px;
-    }
-    
 }
