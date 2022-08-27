@@ -49,6 +49,10 @@ $(document).ready(function(){
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
+    $('.card').on('click', function() {
+        var value = $(this).attr('name');
+        $('#subject').val(value);
+    })
     // typing text animation script
     var typed = new Typed(".typing", {
         strings: ["Developer", "Designer", "Freelancer", "Editor"],
@@ -72,8 +76,10 @@ rocketSelector.addEventListener("mouseleave", function () {
   rocketImageSelector.style.transform = "translate3d(0, 0, 0)";
 });
 
- 
-
+function CNT() {
+    window.scrollBy(2000, 2000);
+    alert("pageXOffset: " + window.scrollX + ", scrollY: " + window.scrollY);
+  }
 
 
 

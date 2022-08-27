@@ -32,7 +32,7 @@
         font-size: 3rem;
     }
     .full p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     
 }
 }
@@ -101,7 +101,7 @@ opacity: 1;
     .nav-menu button {
         display: none;
     }
-
+.scroll,
 .scroll-up-btn,
 .contact {
     display: none;
@@ -153,7 +153,33 @@ opacity: 1;
 }
 @media screen and (max-width: 428px) {
     .div {
+        height: 86rem;
         width: 200%;
+    }
+    .home .text-1 {
+        font-size: 4rem;
+        color: #ffffff;
+    }
+    .home .text-2 {
+        font-size: 10rem;
+        font-weight: 600;
+    }
+    .home .text-3 {
+        font-size: 5rem;
+    }
+    .home {
+        gap: 5.4rem;
+    }
+    .forms .dot2 {
+        height: 19rem;
+        width: 7rem;
+        top: 64%;
+        position: fixed;
+    }
+    .forms .dot {
+        top: 31%;
+        height: 20rem;
+        width: 20rem;
     }
     .div1 {
         width: 200%;
