@@ -1,0 +1,45 @@
+@keyframes dot {
+    0%   {left: -20%;}
+    25%  {left:-20%;}
+    50%  {left: 5%;}
+    100% {left: -12%;}
+    
+  }
+  @keyframes dot2 {
+    0%   {width:0rem;}
+    50%   {width:0rem;}
+    100% {width: 7rem;}
+  }
+  
+  @keyframes Contact {
+    0%   {top:100%;}
+    100% {top: 70%;}
+  }
+
+  @keyframes s-a {
+    0%   {top:140%;color: transparent;}
+    25%  {top:120%;}
+    50%  {top: 100%;}
+    100% {top: 85%;}
+  }
+ 
+  .home .home-content .text-2::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .home .home-content .text-2:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .home .home-content .text-2::before {
+    content: "...";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    color: var(--color-light);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
