@@ -1,0 +1,205 @@
+@media screen and (max-width: 1024px) {
+    body {
+        display: inline-block;
+    }
+    .nav-menu {
+        gap: 2rem;
+    }
+    .home {
+        gap: 2rem;
+    }
+    .home .text-1 {
+        font-size: 2.688rem;
+        color: #ffffff;
+    }
+    .home .text-2 {
+        font-size: 8rem;
+        font-weight: 600;
+    }
+    .home .text-3 {
+        font-size: 4rem;
+    }
+    .scroll a {
+        top : 80%
+    }
+    .scroll-up-btn {
+        display: none;
+    }
+    .card {
+        grid-column-end: span 6;
+      }
+    .full h3 {
+        font-size: 3rem;
+    }
+    .full p {
+        font-size: 1rem;
+    
+}
+}
+@media screen and (max-width: 768px) {
+body {
+    display: inline-block;
+}
+    nav .icons {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--white);
+        cursor : pointer;
+    }
+    nav .icons #close-menu-btn {
+        display: none;
+   }
+   .nav-menu {
+        display: none;
+        position: fixed;
+        top: 5rem;
+        right:5%;
+        height: fit-content; 
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+
+    }
+
+    .nav-menu li {
+        width: 100%;
+        height: 5.8rem;
+        animation:animateNavItems 400ms linear forwards ;
+        transform-origin: top right;
+        opacity: 0;
+    }
+
+    .nav-menu li:nth-child(2) {
+        animation-delay: 200ms;
+    }
+
+    .nav-menu li:nth-child(3) {
+        animation-delay: 400ms;
+            }
+    .nav-menu li:nth-child(4) {
+        animation-delay: 600ms;
+                    }        
+
+    @keyframes animateNavItems {
+        0% {
+transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+        }
+        100% {
+transform: rotateZ(0) rotateX(0) scale(1);
+opacity: 1;
+        }
+    }
+
+    .nav-menu li a {
+        background-color: var(--color-light);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .nav-menu button {
+        display: none;
+    }
+.scroll,
+.scroll-up-btn,
+.contact {
+    display: none;
+}
+
+    /*home*/
+    .forms .dot2 {
+        height: 11rem;
+        width: 3rem;
+        top: 50%;
+        position: fixed;
+    }
+    .forms .dot {
+        height: 12rem;
+        width: 12rem;
+    }
+    .home {
+        gap: 0.4rem;
+    }
+    .home .text-1 {
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    .home .text-2 {
+        font-size: 6rem;
+        font-weight: 600;
+    }
+    .home .text-3 {
+        font-size: 2rem;
+    }
+    .scroll a {
+        left: 47.5%;
+    }
+    .scroll-up-btn {
+        display: none;
+    }
+    main {
+        grid-gap: 20px;
+      }
+      .card {
+        grid-column-end: span 12;
+      }
+      .full h3 {
+        font-size: 2.5rem;
+    }
+    .full p {
+        font-size: 1rem;
+}
+}
+@media screen and (max-width: 428px) {
+    .div {
+        height: 86rem;
+        width: 200%;
+    }
+    .home .text-1 {
+        font-size: 4rem;
+        color: #ffffff;
+    }
+    .home .text-2 {
+        font-size: 10rem;
+        font-weight: 600;
+    }
+    .home .text-3 {
+        font-size: 5rem;
+    }
+    .home {
+        gap: 5.4rem;
+    }
+    .forms .dot2 {
+        height: 19rem;
+        width: 7rem;
+        top: 64%;
+        position: fixed;
+    }
+    .forms .dot {
+        top: 31%;
+        height: 20rem;
+        width: 20rem;
+    }
+    .div1 {
+        width: 200%;
+    }
+    .scroll-up-btn {
+        display: none;
+    }
+    .cards {
+        grid-column: 2 / span 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+        width: 33rem;
+      }
+      .card {
+        grid-column-end: span 6;
+      }
+
+      .about {
+        display: flex;
+        justify-content: center;
+        width: 200%;
+    }
+}

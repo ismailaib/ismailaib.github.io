@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ismailaib</title>
+  <link rel="icon" href="/img/go.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animation.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="container nav-container">
+      <img src="/img/go.png" alt=".png">
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><button >Download CV</button></li>
+      </ul>
+      <div class="icons">
+        <button id="open-menu-btn"><i class="uil uil-bars" style="    background: #101b42;
+              font-size: 1.8rem;
+              color: #ffffff;
+              cursor: pointer;"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply" style="    background: #101b42;
+              font-size: 1.8rem;
+              color: #ffffff;
+              cursor: pointer;"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="forms" id="home">
+    <span class="dot"></span>
+    <span class="dot2"></span>
+  </div>
+  <div class="div">
+    <section class="home" >
+      <div class="text-1">Hi there i’m</div>
+      <div class="text-2">Ismail Aib</div>
+      <div class="text-3">And I'm a <span class="typing"></span></div>
+    </section>
+  </div>
+
+  <div class="scroll">
+    <a href="#About">
+      <h4>About</h4>
+      <img src="/img/Arrow 1.png" alt="">
+    </a>
+  </div>
+  <div class="about" id="About" data-rocket>
+    <section class="cnt">
+      <figure>
+        <img src="/img/Frame 1.png" alt="" data-rocket-image>
+      </figure>
+      <article class="full">
+        <h3>Hi, I’m ismailaitbouhmad</h3>
+        <p> I’m interested in web development</p>
+        <p>I’m currently learning back-end dev</p>
+        <p>Gmail : ismailaitbouhmad@gmail.com</p>
+      </article>
+    </section>
+  </div>
+
+  <div class="div1">
+        <main id="Services">
+      <section class="cards">
+        <div onclick="CNT()" class="card" name="Responsive Personal Portfolio Website" role="button" id="one">
+          <div class="card__image-container">
+            <img src="/img/r.p.jpeg" />
+          </div>
+          <div class="card__content" >
+            <p class="card__title text--medium" >
+              Responsive Personal Portfolio Website
+            </p>
+            <div class="card__info">
+              <p class="card__price text--medium">HTML / Css / Js / JQuery</p>
+            </div>
+          </div>
+        </div>
+        <div onclick="CNT()" class="card" name="Web and App Design" role="button" id="one">
+          <div class="card__image-container" >
+            <img src="/img/design.jpeg" />
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Web and App Design
+            </p>
+            <div class="card__info">
+              <p class="card__price text--medium">Figma / illustrator / Photoshop</p>
+            </div>
+          </div>
+        </div>
+        <div onclick="CNT()" class="card" name="Video Edit and Motion Graphique" role="button" id="one">
+          <div class="card__image-container">
+           <video controls loop muted autoplay src="/img/video.mp4"></video>
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Video Edit and Motion Graphique
+            </p>
+            <div class="card__info">
+              <p class="card__price text--medium">Figma / illustrator / Photoshop</p>
+            </div>
+          </div>
+        </div>
+        <div onclick="CNT()" class="card" name="Responsive Admin Dashboard" role="button" id="one">
+          <div class="card__image-container">
+            <img src="https://images.unsplash.com/photo-1482784160316-6eb046863ece?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" />
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Responsive Admin Dashboard
+            </p>
+            <div class="card__info">
+              <p class="card__price text--medium">HTML / Css / Js</p>
+            </div>
+          </div>
+        </div>
+      <div onclick="CNT()"  class="card" name="Logo Creation With Presentation" role="button" id="one">
+          <div class="card__image-container"  >
+            <img id="logo" src="/img/go.png" />
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Logo Creation With Presentation
+            </p>
+            <div class="card__info">
+              <p class="card__price text--medium">Illustrator / Photoshop</p>
+            </div>
+          </div>
+        </div>
+        <div onclick="CNT()" class="card" name="Responsive Personal Portfolio Website" role="button" id="one">
+          <div class="card__image-container">
+            <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" />
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Lorem ipsum dolor sit.
+            </p>
+            <div class="card__info">
+              <p class="card__price text--medium">Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" name="Responsive Personal Portfolio Website" role="button" id="one">
+          <div class="card__image-container">
+            <img src="https://images.unsplash.com/photo-1534143046043-44af3469836b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" />
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Lorem ipsum dolor sit.
+            </p>
+            <div class="card__info">
+              <p class="card__price text--medium">Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
+        </div>
+        <div onclick="CNT()" class="card" name="Responsive Personal Portfolio Website" role="button" id="one">
+          <div class="card__image-container">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" />
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Lorem, ipsum dolor
+            </p>
+            <div class="card__info">
+              <p class="card__price text--medium">Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
+        </div>
+        <div onclick="CNT()" class="card" name="Responsive Personal Portfolio Website" role="button" id="one">
+          <div class="card__image-container">
+            <img src="https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80" />
+          </div>
+          <div class="card__content">
+            <p class="card__title text--medium">
+              Lorem, ipsum dolor
+            </p>
+            <div class="card__info">
+              <p class="card__price text--medium">Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="contact">
+    <a href="https://www.instagram.com/ismailaib/"><img src="/img/instagram.png" alt=".png"></a>
+    <a href="#"><img src="/img/linkedin.png" alt=".png"></a>
+    <a href="https://www.sololearn.com/profile/26421707"><img src="/img/sololearn.png" alt=".png"></a>
+    <a href="https://github.com/ismailaib"><img src="/img/github.png" alt=".png"></a>
+  </div>
+
+  <form class="form" action="https://formspree.io/f/xwkzprow" method="POST"  id="Contact">
+    <input name="name" id="name" type="text" placeholder="Name">
+    <input name="subject" id="subject" type="text" placeholder="subject" >
+    <input name="email" id="email" type="email" placeholder="E-MAIL">
+    <textarea name="message" id="message" type="text" placeholder="MESSAGE"></textarea>
+    <input id="submit" type="submit" value="Sumbit">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
