@@ -1,0 +1,273 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&display=swap');/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  --first-color: #405084;
+  --second-color: #3F3F69;
+  --third-color: #5A93C6;
+  --text-color: #fff;
+  --text-color-light: #FF6262;
+  --body-color: #18192E;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Dancing Script', cursive;
+  --nav-font-size : 1.7rem;
+  --biggest-font-size: 2.25rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-semi-bold: 100;
+
+  /*========== z index ==========*/
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  user-select: none;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  margin-inline: 1.5rem;
+  
+}
+
+.main {
+  align-items: center; /* For the animations */
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: background .3s;
+}
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--nav-font-size);
+}
+.nav-logo{
+  width: 3.5rem;
+}
+.nav-logo, 
+.nav-toggle, 
+.nav-link, 
+.nav-close{
+  color: var(--text-color);
+}
+
+.nav-toggle{ 
+  display: inline-flex;
+  font-size: 1.25rem; 
+  cursor: pointer; 
+}
+
+@media screen and (max-width: 767px){ 
+  .nav-menu{ 
+    position: fixed; 
+    background-color: var(--body-color); 
+    width: 100%; 
+    left: 0; 
+    top: -100%; 
+    box-shadow: 0 3px 8px hsla(203, 71%, 4%, .2); 
+    padding: 4rem 0 3.5rem; 
+    transition: top .4s; 
+    overflow: hidden;
+   }
+}
+
+.nav-list{ 
+  display: flex; 
+  flex-direction: column; 
+  text-align: center; 
+  row-gap: 2rem; 
+}
+
+.nav-link{ 
+  font-weight: var(--font-semi-bold); 
+  transition: color .4s; 
+}
+
+.nav-link:hover{ 
+  color: var(--first-color); 
+}
+
+.nav-close, 
+.nav-img{ 
+  position: absolute;
+}
+
+.nav-close{ 
+  top: 1rem; 
+  right: 1.5rem; 
+  font-size: 1.5rem; 
+  cursor: pointer; 
+}
+
+.nav-img{ 
+  width: 92px;
+  left: 1em;
+  bottom: -2rem;
+  filter: drop-shadow(0 4px 20px hsla(203, 71%, 60%, .5));
+}
+/* Show menu */
+.show-menu{
+  top: 0;
+}
+
+/* Active link */
+.active-link{ 
+  color: #fff;
+}
+
+/* Change background header */
+.header-bg {
+  background: var(--body-color);
+  box-shadow: 0 2px 4px rgba(238, 238, 238, 0.123);
+}
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container{
+      margin-inline: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 767px) {
+  .nav{
+      height: calc(var(--header-height) + 3.5rem );
+  }
+  .nav-toggle,
+  .nav-close,
+  .nav-img{
+      display: none;
+  }
+  .nav-list{
+      flex-direction: row;
+      column-gap: 4rem;
+  }
+}
+
+/* INTRO  */
+
+
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shaps {
+  position: relative;  
+}
+.shaps .big-shap {
+  display: flex;
+  width: 36rem;
+  height: 36rem;
+  border-radius: 100%;
+  box-shadow: inset 2px 22px 26px 14px rgb(0 0 0 / 38%);
+  background-color: var(--second-color);
+  align-items: center;
+  justify-content: center;
+  animation: big-shap 400ms ease ;
+}
+.shaps .medium-shap {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 100%;
+  box-shadow: inset 2px 22px 26px 14px rgb(0 0 0 / 38%);
+  background-color: var(--first-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: medium-shap 600ms ease ;
+}
+.shaps .small-shap {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+  box-shadow: inset 2px 22px 26px 14px rgb(0 0 0 / 38%);
+  background-color: var(--third-color);
+  animation: small-shap 800ms ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shaps .small-shap .text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 103px;
+}
+
+
+.shaps .small-shap .text h2{
+  color: var(--text-color-light);
+  font-size: 150px;
+  font-weight: 300;
+  font-family:'Great Vibes', cursive;
+  animation: text-h2 1000ms ease ;
+}
+
+.shaps .small-shap .text h1{
+  font-size: 10rem;
+  font-weight: 200;
+  animation: text-h1 1.5s ease ;
+}
