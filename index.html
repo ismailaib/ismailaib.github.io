@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website Design Tailwind CSS</title>
+    <title>ismailaib | Officiel Portfolio </title>
     <!--icon-->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
     <!--slider-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css">
-    <!--tailwind.css-->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!--parallax-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <!--main CSS-->
@@ -23,39 +20,17 @@
 
 <body>
     <!--:::::::::::::::::::::-Header-::::::::::::::::::::-->
-    <header class="w-full fixed top-0 left-0 bg-[#090a1a] z-[999] flex justify-between items-center h-16 lg:px-0 px-4">
-        <a href="" class="text-white block md:hidden" id="menuOpen">
-            <img src="assets/img/logo.png" class="h-7 sm:h-9" alt="">
-        </a>
-        <button class="text-white cursor-pointer block md:hidden" id="nav-toggle">
-            <i class="fi fi-rr-apps"></i>
-        </button>
+    <header>
+        <a href="#" class="logo">Ismail.<span>aib</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
 
-        <nav class="w-full visible fixed lg:px-0 md:left-0 left-[-100%] md:block top-0 bg-[#0909a1a]
-        lg:bg-transparent md:h-auto md:py-0 h-screen py-5 px-2 z-[100]" id="nav-menu">
-            <div class="menu_Slider max-w-5xl md:h-auto md:flex md:flex-wrap md:justify-between
-            md:items-center md:mx-auto mx-6 grid gap-8 md:gap-0 lg:gap-8 h-full">
-                <button class="text-white text-xl block absolute right-6 p-1 cursor-pointer md:hidden" 
-                    id="menu_hide_btn">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-
-                <div>
-                    <a href="#" class="flex items-center">
-                        <img src="assets/img/logo1.png 1.png" class="h-6 sm:h-9" alt="">
-                    </a>
-                </div>
-
-                <div>
-
-                </div>
-
-                <div>
-
-                </div>
-
-            </div>
-        </nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>        
+            <li><a href="#about">About</a></li>         
+            <li><a href="#services">Services</a></li>            
+            <li><a href="#resume">Resume</a></li>           
+            <li><a href="#contact" id="contact">Contact</a></li>           
+        </ul>
     </header>
     <!--::::::::::::::::::-hero section-::::::::::::::::::-->
 
@@ -93,8 +68,10 @@
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <!---slider js--->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+    <!---icon js--->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <!---main js--->
-    <script src="assets/js/js.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

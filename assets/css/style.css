@@ -1,118 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
 
-@layer base {
   * {
     margin: 0;
     padding: 0;
     box-sizing: content-box;
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
   }
 
   body {
-    /* background: #070d1f; */
-    background: #090a1a;
-    transition: all 0.475s;
+    background: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+  }
+  img {
+    width: 5rem;
+  }
+  :root {
+    --text-color : #fff;
+    --bg-color : #090a1a;
+    --main-color : rgba(121, 247, 173, 0.993);
+    --main-color-2 : rgb(16, 14, 24);
+    --big-font : 1.9rem;
+    --p-font : 1rem;
   }
 
-  *,
-  html,
-  body,
-  a,
-  button,
-  span,
-  p {
-    font-family: "Poppins", sans-serif;
-  }
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bg-color);
+  padding: 24px 0%;
+}
+.logo {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+span{
+  color: var(--main-color);
+}
 
-  ::selection {
-    background: #647bff;
-    color: #fff;
-  }
+.navbar {
+  display: flex;
+}
+.navbar a {
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+}
 
-  /* Scrollbar Styling */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #090a1a;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #647bfd;
-  }
-
-  .show {
-    left: 0;
-    transition: all 0.3s ease;
-  }
-
-  #nav-menu {
-    transition: 0.4s;
-  }
-
-  .show_menu {
-    left: 0 !important;
-  }
-
-  a {
-    transition: all 0.5s ease;
-    width: max-content;
-  }
-
-  .active-link {
-    background-color: rgba(100, 123, 255, 0.161);
-    color: #647bff !important;
-    transition: all 0.5s ease;
-    width: max-content;
-  }
-
-  .btn__hover {
-    transition: all 0.475s;
-  }
-
-  .btn__hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-    background: #fff;
-    transition: all 0.475s;
-    z-index: -1;
-  }
-
-  .btn__hover:hover::before {
-    transform: scaleX(1);
-  }
-
-  /***slider button**/
-  .swiper-pagination-bullet {
-    width: 40px !important;
-    height: 1.5px !important;
-    border-radius: 20px !important;
-    background: #fff !important;
-    opacity: 0.9 !important;
-  }
-
-  .swiper-pagination-bullet-active {
-    height: 4.5px !important;
-  }
-
-  .swiper-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 0.5rem !important;
-  }
+.navbar a:hover {
+  color: var(--main-color);
+  transition:  1s ;
+}
+.navbar #contact {
+  color: var(--text-color);
+  border-radius: 30px;
+}
+.navbar #contact:hover {
+  color: var(--text-color);
+  border-radius: 30px;
+  background: var(--main-color);
+  transition: all 300ms ease-in-out;
+}
+#menu-icon {
+  font-size: 28px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
 }
