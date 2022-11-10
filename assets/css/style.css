@@ -9,12 +9,12 @@
     list-style: none;
   }
 
-  body {
+body,html {
     background: var(--bg-color);
     color: var(--text-color);
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
-  }
+}
   :root {
     --text-color : #fff;
     --text-color-2 : rgb(160, 160, 160);
@@ -58,7 +58,7 @@ header {
   justify-content: space-around;
   background: var(--header-color);
   backdrop-filter: blur(10px);
-  padding: 24px 14%;
+  padding: 24px 10%;
 }
 .logo {
   color: var(--text-color);
@@ -98,7 +98,7 @@ span{
   display: none;
 }
 section {
-  padding: 120px 14%;
+  padding: 120px 10%;
 }
 .home {
   position: relative;
@@ -158,4 +158,76 @@ section {
   background: var(--text-color);
   color: var(--main-color);
   box-shadow: 4px 4px var(--main-color);
+}
+.about{
+  padding: 120px 10%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+}
+.about-img {
+  --gap: 16px;
+  --num-cols: 2;
+  --row-height: 300px;
+  box-sizing: border-box;
+  padding: var(--gap);
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.about-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-img-col-2 {
+  grid-column: span 2;
+}
+
+.about-img-row-2 {
+  grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+  .about-img {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+}
+.about-text h2 {
+  color: var(--text-color);
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin: 0 0 30px;
+}
+
+.about-text p {
+  color: var(--text-color-2);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 6px;
+  margin: 0 0 30px;
+}
+.count {
+  margin-bottom: 2rem;
+}
+.about-text .count a {
+  color: var(--text-color-2);
+  margin-right: 20px;
+  word-spacing: 5px;
+}
+.count span {
+  color: var(--main-color);
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+.main-btn .btn {
+  margin-right: 20px;
 }
