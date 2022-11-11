@@ -270,8 +270,8 @@ section {
   color: var(--text-color-2);
 }
 .row:hover{
-  transform: translate(-15px);
-  box-shadow: 10px 15px 0px 0px #fff;
+  transform: translate(-14px);
+  box-shadow: 14px 14px 0px 0px #fff;
 }
 .cta{
   background: #0a0a16;
@@ -293,4 +293,46 @@ section {
   font-size: 4rem;
   font-weight: 300;
   margin-bottom: 40px;
+}
+.resume-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 4.4rem;
+}
+.box {
+  background: #0a0a16;
+  padding: 50px 30px;
+  cursor: pointer;
+  transition: all 400ms;
+}
+.box h6{
+  color: #3e4455;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.box h4{
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 13px;
+}
+.box p{
+  color: var(--text-color-2);
+  font-size: var(--p-font);
+  font-weight: 300;
+  line-height: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+.box h5{
+  color: var(--text-color-light);
+  font-size: 14px;
+  font-weight: 500;
+}
+.box:hover{
+  transform: translate(-7px);
+  box-shadow: 7px 7px 0px 0px #fff;
 }
