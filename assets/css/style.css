@@ -81,11 +81,11 @@ span{
   color: var(--main-color);
   transition:  1s ;
 }
-.navbar #contact {
+.navbar #contact:hover {
   color: var(--text-color);
   border-radius: 30px;
 }
-.navbar #contact:hover {
+.navbar #contact {
   color: var(--text-color);
   border-radius: 30px;
   background: var(--main-color);
@@ -141,6 +141,7 @@ section {
   margin-bottom: 1.5rem;
   color: var(--text-color-2);
 }
+.send-btn,
 .btn{
   background: var(--main-color);
   color: var(--text-color);
@@ -154,6 +155,7 @@ section {
   letter-spacing: 2px;
   transition: ease all 350ms;
 }
+.send-btn,
 .btn:hover{
   background: var(--text-color);
   color: var(--main-color);
@@ -335,4 +337,52 @@ section {
 .box:hover{
   transform: translate(-7px);
   box-shadow: 7px 7px 0px 0px #fff;
+}
+.contact-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.2rem;
+}
+.contact-form form{
+  position: relative;
+  width: 550px;
+}
+form input,
+form textarea{
+  min-width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: #0b0b13;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.send-btn{
+  background: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 4px 4px var(--text-color);
+  cursor: pointer;
+  padding: 0 25px;
+  line-height: 42px;
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: ease all 350ms;
+}
+.send-btn:hover{
+  background: var(--text-color);
+  color: var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+}
+.copyright{
+  text-align: center;
+  padding: 30px;
+  color: var(--text-color-2);
+  background: #0b0b13;
+  margin-top: 3rem;
 }
