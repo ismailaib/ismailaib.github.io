@@ -111,7 +111,7 @@ section {
 }
 .home-img img {
   max-width: 100%;
-  width: 600px;
+  width: 420px;
   height: auto;
 }
 .home-text h5 {
@@ -385,4 +385,99 @@ form textarea{
   color: var(--text-color-2);
   background: #0b0b13;
   margin-top: 3rem;
+}
+
+@media screen and (max-width: 1430px) {
+  header{
+    padding: 25px 3%;
+  }
+  section{
+    padding: 40px 3%;
+  }
+  :root{
+    --big-font: 3rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  :root{
+    --big-font: 3rem;
+    --p-font: 0.9rem;
+  }
+  .home{
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 830px) {
+  header{
+      padding: 18px 3%;
+      display: flex;
+    justify-content: space-between;
+  }
+  #menu-icon{
+    display: block;
+  }
+  .navbar{
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #0b0b13;
+    text-align: left;
+    transition: 200ms ease;
+  }
+  .navbar a{
+    display: block;
+    padding: 1rem;
+    border-left: 2px solid var(--main-color);
+    margin: 1rem;
+  }
+  .navbar #contact:hover {
+    color: var(--main-color);
+    transition:  1s ;
+    border-radius: 0px;
+  }
+  .navbar #contact {
+    color: var(--text-color);
+    background: #0b0b13;
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 0px;
+  }
+  .navbar.active{
+    top: 100%;
+  }
+}
+@media screen and (max-width: 830px) {
+    .home{
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      text-align: center;
+      margin-top: 80px;
+      height: 100vh;
+    }
+    .home-text p{
+      max-width: 100%;
+    }
+    .home-img img{
+      max-width: 100%;
+      width: 420px;
+      height: auto;
+    }
+    .about{
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .about-text h2{
+      max-width: 100%;
+    }
+    .about-text p{
+      max-width: 100%;
+    }
+    .about-img{
+      order: 2;
+    }
 }
