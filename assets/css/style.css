@@ -162,6 +162,16 @@ section {
   color: var(--main-color);
   box-shadow: 4px 4px var(--main-color);
 }
+.social{
+  display: grid;
+  justify-content: center;  
+  justify-items: center;
+}
+.social .container {
+  cursor: pointer;
+  width: 100%;
+  font-size: 43px;
+}
 .about{
   padding: 120px 10%;
   display: grid;
