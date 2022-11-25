@@ -111,6 +111,10 @@ section {
   grid-gap: 6rem;
   align-items: center;
 }
+.home-img{
+  display: flex;
+  justify-content: flex-end;
+}
 .home-img img {
   max-width: 100%;
   width: 420px;
@@ -479,6 +483,9 @@ form textarea{
     }
     .home-text p{
       max-width: 100%;
+    }
+    .home-img{
+      justify-content: center;
     }
     .home-img img{
       max-width: 100%;
