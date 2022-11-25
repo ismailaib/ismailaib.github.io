@@ -7,6 +7,7 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     list-style: none;
+    color: white;
   }
 
 body,html {
@@ -163,14 +164,19 @@ section {
   box-shadow: 4px 4px var(--main-color);
 }
 .social{
-  display: grid;
-  justify-content: center;  
+  display: flex;
+  justify-content: center;
   justify-items: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10%;
 }
 .social .container {
   cursor: pointer;
   width: 100%;
   font-size: 43px;
+  display: contents;
+  gap: 3rem;
 }
 .about{
   padding: 120px 10%;
@@ -286,6 +292,7 @@ section {
   transform: translate(-14px);
   box-shadow: 14px 14px 0px 0px #fff;
 }
+
 .cta{
   background: #0a0a16;
   width: 100%;
@@ -490,5 +497,18 @@ form textarea{
     }
     .about-img{
       order: 2;
+    }
+    .social{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .typed-cursor{
+      font-size: 40px;
+    }
+    .typing{
+      font-size: 40px;
+    }
+    .box{
+      width: 90%;
     }
 }
