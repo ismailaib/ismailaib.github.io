@@ -501,6 +501,7 @@ form textarea{
     .social{
       display: grid;
       grid-template-columns: 1fr 1fr;
+      padding: 150px 0 80px;
     }
     .typed-cursor{
       font-size: 40px;
