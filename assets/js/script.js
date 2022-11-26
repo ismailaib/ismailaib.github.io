@@ -33,3 +33,27 @@ sr.reveal('.center',{delay:100, origin:'right'})
 sr.reveal('.service-content .row',{delay:100, origin:'bottom'})
 sr.reveal('.resume-content .box',{delay:100, origin:'bottom'})
 sr.reveal('.contact-form',{delay:100, origin:'bottom'})
+sr.reveal('.social',{delay:100, origin:'bottom'})
+
+  // typing text animation script
+let nums = document.querySelectorAll(".count .num");
+let section = document.querySelector(".social");
+let started = false; // Function Started ? No
+window.onscroll = function () {
+        if (window.scrollY >= section.offsetTop) {
+          if (!started) {
+            nums.forEach((num) => startCount(num));
+          }
+          started = true;
+        }
+};
+
+function startCount(el) {
+  let goal = el.dataset.goal;
+  let count = setInterval(() => {
+    el.textContent++;
+    if (el.textContent == goal) {
+        clearInterval(count);
+    }
+  }, 100)
+}
