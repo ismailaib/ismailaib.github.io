@@ -334,12 +334,16 @@ section {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  overflow: hidden;
+  max-height: 17rem;
+  overflow-y: scroll;
 }
 .box h6{
   color: #3e4455;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
+  text-align: center;
 }
 .box h4{
   color: var(--text-color);
@@ -347,6 +351,7 @@ section {
   font-weight: 700;
   margin-top: 25px;
   margin-bottom: 13px;
+  text-align: center;
 }
 .box p{
   color: var(--text-color-2);
@@ -354,11 +359,13 @@ section {
   font-weight: 300;
   line-height: 1.8rem;
   margin-bottom: 1.2rem;
+  text-align: center;
 }
 .box h5{
   color: var(--text-color-light);
   font-size: 14px;
   font-weight: 500;
+  text-align: center;
 }
 .box:hover{
   transform: translate(-7px);
