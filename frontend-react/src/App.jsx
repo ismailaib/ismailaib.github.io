@@ -11,26 +11,20 @@ const App = () => {
   return (
     <main className='relative'>
       <Nav />
-      <h1>nav</h1>
-      <section className='xl:padding-l wide:padding-r padding-b'>
-        {/* <Hero /> */}
-        <h1>Hero</h1>
+      <section className='xl:padding-l wide:padding-r padding-b ml-8'>
+        <Hero />
       </section>
       <section className='padding'>
-        {/* <About /> */}
-        <h1>About</h1>
+        <About />
       </section>
       <section className='padding-x py-10'>
-        {/* <Skills /> */}
-        <h1>Skills</h1>
+        <Skills />
       </section>
       <section className='padding'>
-        {/* <Projects /> */}
-        <h1>Projects</h1>
+        <Projects />
       </section>
       <section className='bg-pale-blue padding'>
-        {/* <Contact /> */}
-        <h1>Contact</h1>
+        <Contact />
       </section>
     </main>
   );
