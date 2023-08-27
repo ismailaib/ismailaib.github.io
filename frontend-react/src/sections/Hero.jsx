@@ -1,4 +1,4 @@
-import { arrowRight , facebook , instagram , twitter , profile , react , node , python} from "../assets/icons";
+import { arrowRight , facebook , instagram , twitter , profile , react , node , python , laravel} from "../assets/icons";
 
 const Hero = () => {
 
@@ -9,7 +9,7 @@ const Hero = () => {
       >
         <h1 className="text-[4rem] flex flex-row items-center gap-12 mt-10 font-palanquin max-sm:text-[40px] max-sm:leading-[60px] font-bold">
             Hi! I Am
-            <span className="text-[1.5rem] bg-indigo-700 flex align-middle h-fit text-white p-2 border rounded-full hover:scale-110 duration-300 cursor-pointer">Full stack Developer</span>
+            <span className="text-xl bg-indigo-700 flex align-middle h-fit text-white p-2 border rounded-full hover:scale-110 duration-300 cursor-pointer max-md:text-sm max-sm:hidden">Full stack Developer</span>
             <br />
         </h1>
         <h1 className="text-[4rem] flex flex-row gap-3 font-palanquin max-sm:text-[40px] max-sm:leading-[60px] font-bold">Ismail Aitbouhmad</h1>
@@ -54,18 +54,18 @@ const Hero = () => {
       </div>
       <div className="relative w-11/12 flex flex-col items-start max-xl:padding-x pt-28">
         <div className="flex flex-col align-middle  justify-end bg-gray-300 w-full h-full rounded-lg">
-        <div className="hidden md:block">
-          <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full bg-white absolute left-16 bottom-[62%] max-lg:left-24">
-            <img src={react} className=" w-62" alt='arrow icon' width={65} />
+          <div className="hidden md:block">
+            <div className="w-[100px] h-[100px] flex items-center justify-center rounded-full bg-white absolute left-16 bottom-[62%] max-lg:left-24 animate-float01">
+              <img src={react} className="w-62" alt='arrow icon' width={65} />
+            </div>
+            <div className="w-[120px] h-[120px] flex items-center justify-center rounded-full bg-white absolute left-[70%] bottom-[48%] animate-float02">
+              <img src={laravel} className="w-65" alt='arrow icon' width={70} />
+            </div>
+            <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full bg-white absolute left-[70%] bottom-[75%] animate-float03">
+              <img src={python} className="w-62" alt='arrow icon' width={65} />
+            </div>
           </div>
-          <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full bg-white absolute left-[70%] bottom-[48%]">
-            <img src={node} className=" w-62" alt='arrow icon' width={65} />
-          </div>
-          <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full bg-white absolute left-[70%] bottom-[75%]">
-            <img src={python} className=" w-62" alt='arrow icon' width={65} />
-          </div>
-        </div>
-          <img src={profile} className=" w-full pt-10 px-10" alt='arrow icon' width={65} />
+          <img src={profile} className=" w-full pt-10 px-10 z-10" alt='arrow icon' width={65} />
         </div>
       </div>
    </section>

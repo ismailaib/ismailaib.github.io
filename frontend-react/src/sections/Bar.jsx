@@ -6,7 +6,6 @@ import { star } from "../assets/icons";
 const Bar = () => {
   return (
     <section>
-      <div className='bg-gradient-to-r from-[#89F2DF] to-[#FFF100] w-full h-32 flex justify-center items-center overflow-hidden'>
             <div className='bg-[#262626] w-full h-20 rotate-[-0.8deg] flex flex-row items-center justify-between'>
             <Marquee>
                 <h2 className=' text-white text-2xl'>Front-end Developer</h2>
@@ -21,7 +20,6 @@ const Bar = () => {
 
             </div>
         
-      </div>
     </section>
   );
 };

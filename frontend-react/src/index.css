@@ -12,6 +12,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 @layer components {
   .max-container {
     max-width: 1440px;
@@ -62,4 +66,52 @@
 }
 .initial-child-container {
   display: contents !important;
+}
+
+.animate-float01 {
+  transition: transform 1s ease-in-out infinite;
+  animation: float01 3s ease-in-out infinite;
+}
+.animate-float02 {
+  transition: transform 1s ease-in-out infinite;
+  animation: float02 4s ease-in-out infinite;
+}
+.animate-float03 {
+  transition: transform 1s ease-in-out infinite;
+  animation: float03 5s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float01 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes float02 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes float03 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

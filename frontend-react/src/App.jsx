@@ -8,6 +8,8 @@ import {
   Contact,
 } from "./sections";
 
+
+
 const App = () => {
   return (
     <main className='relative'>
@@ -21,13 +23,13 @@ const App = () => {
       <section className='padding' id='About'>
         <About />
       </section>
-      <section className='padding-x py-10'>
+      <section className='padding-x py-10' id="Skills">
         <Skills />
       </section>
-      <section className='padding'>
+      <section className='padding' id="Works">
         <Projects />
       </section>
-      <section className='bg-pale-blue padding'>
+      <section className='bg-pale-blue padding' id="Contact">
         <Contact />
       </section>
     </main>
