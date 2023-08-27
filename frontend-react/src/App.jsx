@@ -18,7 +18,7 @@ const App = () => {
       <section className='w-full'>
         <Bar />
       </section>
-      <section className='padding'>
+      <section className='padding' id='About'>
         <About />
       </section>
       <section className='padding-x py-10'>

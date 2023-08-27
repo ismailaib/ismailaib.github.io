@@ -1,3 +1,8 @@
+import about01 from './about01.png'
+import about02 from './about02.png'
+import about03 from './about03.png'
+import about04 from './about04.png'
+
 import node from './node.png'
 import python from './python.png'
 import react from './react.svg'
@@ -17,6 +22,10 @@ import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
 
 export {
+    about01,
+    about02,
+    about03,
+    about04 ,
     python,
     node,
     react,
