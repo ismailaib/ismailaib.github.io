@@ -1,3 +1,6 @@
+import node from './node.png'
+import python from './python.png'
+import react from './react.svg'
 import arrow from './arrow.png'
 import profile from './profile.png'
 import arrowRight from './arrow-right.svg'
@@ -14,6 +17,9 @@ import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
 
 export {
+    python,
+    node,
+    react,
     profile,
     arrow,
     arrowRight,

@@ -22,7 +22,7 @@ const Nav = () => {
           ))}
         </ul>
         <div className='button  flex align-middle justify-center max-lg:hidden'>
-          <button className="py-4 px-8 rounded-none border-2	border-black bg-transparent font-bold text-md">Let’s chat</button>
+          <button className="py-4 px-8 rounded-none border-2 hover:bg-black hover:text-white duration-300 border-black bg-transparent font-bold text-md">Let’s chat</button>
         </div>
         <div className='hidden max-lg:block'>
           <img src={hamburger} alt='hamburger icon' width={25} height={25} />

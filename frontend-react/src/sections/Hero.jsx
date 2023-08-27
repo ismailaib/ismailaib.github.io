@@ -1,4 +1,4 @@
-import { arrowRight , facebook , instagram , twitter , profile} from "../assets/icons";
+import { arrowRight , facebook , instagram , twitter , profile , react , node , python} from "../assets/icons";
 
 const Hero = () => {
 
@@ -9,7 +9,7 @@ const Hero = () => {
       >
         <h1 className="text-[4rem] flex flex-row items-center gap-12 mt-10 font-palanquin max-sm:text-[40px] max-sm:leading-[60px] font-bold">
             Hi! I Am
-            <span className="text-[1.5rem] bg-indigo-700 flex align-middle h-fit text-white p-2 border rounded-full">Full stack Developer</span>
+            <span className="text-[1.5rem] bg-indigo-700 flex align-middle h-fit text-white p-2 border rounded-full hover:scale-110 duration-300 cursor-pointer">Full stack Developer</span>
             <br />
         </h1>
         <h1 className="text-[4rem] flex flex-row gap-3 font-palanquin max-sm:text-[40px] max-sm:leading-[60px] font-bold">Ismail Aitbouhmad</h1>
@@ -18,8 +18,8 @@ const Hero = () => {
           as a full-stack developer
         </p>
         <div className="flex gap-9">
-          <button className="py-4 px-8 rounded-none bg-[#FD481D] text-white font-bold text-md">Hire me</button>
-          <button className="flex items-center text-lg font-bold text-[#FD481D]">
+          <button className="py-4 px-8 rounded-none bg-[#FD481D] text-white font-bold text-md hover:bg-transparent border-2 border-[#FD481D] duration-300 hover:text-[#FD481D]">Hire me</button>
+          <button className="flex items-center text-lg font-bold text-[#FD481D] hover:scale-110 duration-300">
             Projects
             <img src={arrowRight} className="rotate-[-45deg]" alt='arrow icon' width={45} />
           </button>
@@ -52,8 +52,19 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative w-11/12 flex flex-col justify-center items-start max-xl:padding-x pt-28">
-        <div className="flex flex-col align-middle justify-center bg-gray-300 w-full h-full rounded-lg">
+      <div className="relative w-11/12 flex flex-col items-start max-xl:padding-x pt-28">
+        <div className="flex flex-col align-middle  justify-end bg-gray-300 w-full h-full rounded-lg">
+        <div className="hidden md:block">
+          <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full bg-white absolute left-16 bottom-[62%] max-lg:left-24">
+            <img src={react} className=" w-62" alt='arrow icon' width={65} />
+          </div>
+          <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full bg-white absolute left-[70%] bottom-[48%]">
+            <img src={node} className=" w-62" alt='arrow icon' width={65} />
+          </div>
+          <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full bg-white absolute left-[70%] bottom-[75%]">
+            <img src={python} className=" w-62" alt='arrow icon' width={65} />
+          </div>
+        </div>
           <img src={profile} className=" w-full pt-10 px-10" alt='arrow icon' width={65} />
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { Nav } from "./components";
 import {
   Hero,
+  Bar,
   About,
   Skills,
   Projects,
@@ -13,6 +14,9 @@ const App = () => {
       <Nav />
       <section className='xl:padding-l wide:padding-r padding-b ml-8'>
         <Hero />
+      </section>
+      <section className='w-full'>
+        <Bar />
       </section>
       <section className='padding'>
         <About />
