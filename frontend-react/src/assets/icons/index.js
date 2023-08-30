@@ -1,5 +1,8 @@
 import about01 from './about01.png'
 import about02 from './about02.png'
+import github from './github.png'
+import eye from './eye.png'
+
 import about03 from './about03.png'
 import about04 from './about04.png'
 
@@ -25,6 +28,8 @@ import truckFast from './truck-fast.svg'
 import twitter from './twitter.svg'
 
 export {
+    github,
+    eye,
     bag,
     laravel,
     about01,
