@@ -7,7 +7,7 @@ const About = () => {
       <h1 className="flex justify-center text-3xl font-semibold">About me</h1>
       <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-12 mt-20">
         {aboutData.map((skill, index) => (
-          <div key={index}>
+          <div key={index} className='bg-white p-4 rounded-xl'>
             <img src={skill.icon} className="rounded-lg" alt={`icon ${index + 1}`} />
             <h2 className="pt-4 text-xl font-semibold">{skill.title}</h2>
             <p className="pt-4 text-gray-600">{skill.description}</p>

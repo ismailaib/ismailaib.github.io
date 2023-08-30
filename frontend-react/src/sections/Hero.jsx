@@ -8,10 +8,11 @@ const Hero = () => {
         className="relative pl-8 w-11/12 flex flex-col justify-center items-start max-xl:padding-x pt-28" 
       >
         <h1 className="text-[4rem] flex flex-row items-center gap-12 mt-10 font-palanquin max-sm:text-[40px] max-sm:leading-[60px] font-bold">
-            Hi! I Am
-            <span className="text-xl bg-indigo-700 flex align-middle h-fit text-white p-2 border rounded-full hover:scale-110 duration-300 cursor-pointer max-md:text-sm max-sm:hidden">Full stack Developer</span>
-            <br />
+          Hi! I Am
+          <span className="button5 text-xl transform scale-125 bg-indigo-700 flex align-middle h-fit text-white p-2 border rounded-full hover:scale-110 duration-300 cursor-pointer max-md:text-sm max-sm:hidden">Full stack Developer</span>
+          <br />
         </h1>
+
         <h1 className="text-[4rem] flex flex-row gap-3 font-palanquin max-sm:text-[40px] max-sm:leading-[60px] font-bold">Ismail Aitbouhmad</h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
           Building website for over 2 years 
@@ -74,3 +75,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+

@@ -1,6 +1,8 @@
 import Nav from "./Nav";
+import Bar from './Bar';
 
 
 export {
-    Nav
+    Nav,
+    Bar
 }

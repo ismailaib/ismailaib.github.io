@@ -69,3 +69,35 @@ export  const eventData = [
       date: '2023',
     },
   ];
+
+
+  export const ProjectData = [
+    {
+      icon: about01,
+      title: 'Smart Green House',
+      description: 'I am a web front-end developer with 2 years of experience',
+      link: '',
+      demo: '',
+    },
+    {
+      icon: about02,
+      title: 'CardSess',
+      description: 'I am a web back-end developer with 2 years of experience',
+      link: '',
+      demo: '',
+    },
+    {
+      icon: about03,
+      title: 'Agrobot',
+      description: 'I am a web Web Designer developer with 2 years of experience',
+      link: '',
+      demo: '',
+    },
+    {
+      icon: about04,
+      title: 'Pfe',
+      description: 'I am a web Website Tester developer with 2 years of experience',
+      link: '',
+      demo: '',
+    },
+  ];

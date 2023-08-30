@@ -1,7 +1,6 @@
-import { Nav } from "./components";
+import { Nav , Bar} from "./components";
 import {
   Hero,
-  Bar,
   About,
   Skills,
   Projects,
@@ -17,19 +16,19 @@ const App = () => {
       <section className='xl:padding-l wide:padding-r padding-b ml-8'>
         <Hero />
       </section>
-      <section className='w-full'>
+      <section className='w-full '>
         <Bar />
       </section>
-      <section className='padding' id='About'>
+      <section className='padding bg-pale-blue' id='About'>
         <About />
       </section>
-      <section className='padding-x py-10' id="Skills">
+      <section className='padding-x py-10 ' id="Skills">
         <Skills />
       </section>
-      <section className='padding' id="Works">
+      <section className='padding bg-pale-blue' id="Works">
         <Projects />
       </section>
-      <section className='bg-pale-blue padding' id="Contact">
+      <section className=' padding' id="Contact">
         <Contact />
       </section>
     </main>
