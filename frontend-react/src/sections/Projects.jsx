@@ -41,7 +41,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className='flex flex-row max-md:flex-col bg-white p-4 rounded-xl linearGradient2'>
+          <div className='flex flex-row max-md:flex-col bg-white p-4 rounded-xl linearGradient2  max-md:hidden'>
             <img src={about02} className="rounded-lg w-72 max-md:w-full opacity-20" alt="" />
             <div className='opacity-20 px-4'>
               <h2 className="pt-4 text-xl font-semibold">Fullstack Portfolio</h2>

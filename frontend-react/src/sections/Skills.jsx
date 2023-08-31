@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section className="py-16">
       <h1 className="text-3xl text-center font-semibold mb-8">Skills</h1>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 mt-20">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 mt-20 max-md:gap-20">
         <div className="gap-10 flex flex-wrap items-start justify-center flex-1">
           {skillsData.map((skill, index) => (
             <div key={index} className="flex flex-col items-center">

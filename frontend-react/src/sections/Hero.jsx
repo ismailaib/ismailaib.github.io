@@ -3,17 +3,17 @@ import { arrowRight , facebook , instagram , twitter , profile , react , node , 
 const Hero = () => {
 
   return (
-   <section id="Home" className="w-full grid xl:grid-cols-2	justify-center min-h-fit py-8 gap-10 max-container">
+   <section id="Home" className="w-full grid xl:grid-cols-2	justify-center min-h-fit py-8 gap-10 max-container pb-0">
       <div
         className="relative pl-8 w-11/12 flex flex-col justify-center items-start max-xl:padding-x pt-28" 
       >
         <h1 className="text-[4rem] flex flex-row items-center gap-12 mt-10 font-palanquin max-sm:text-[40px] max-sm:leading-[60px] font-bold">
           Hi! I Am
-          <span className="button5 text-xl transform scale-125 bg-indigo-700 flex align-middle h-fit text-white p-2 border rounded-full hover:scale-110 duration-300 cursor-pointer max-md:text-sm max-sm:hidden">Full stack Developer</span>
+          <span className="button5 text-xl max-2xl:text-sm transform scale-125 bg-indigo-700 flex align-middle h-fit text-white p-2 border rounded-full hover:scale-110 duration-300 cursor-pointer max-md:text-sm max-sm:hidden">Full stack Developer</span>
           <br />
         </h1>
 
-        <h1 className="text-[4rem] flex flex-row gap-3 font-palanquin max-sm:text-[40px] max-sm:leading-[60px] font-bold">Ismail Aitbouhmad</h1>
+        <h1 className="max-2xl:text-[3rem] text-[4rem]  flex flex-row gap-3 font-palanquin max-sm:text-[40px] max-sm:leading-[60px] font-bold">Ismail Aitbouhmad</h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
           Building website for over 2 years 
           as a full-stack developer
@@ -36,38 +36,35 @@ const Hero = () => {
           </h2>
         </div>
         <div className="flex flex-col justify-between align-middle gap-5">
-          <h2 className="text-3xl font-bold">Contact</h2>
           <div className="flex flex-row gap-5">
             <a href="/" className=" cursor-pointer">
               <img src={facebook} className="" alt='arrow icon' width={30} />
-              Facebook
             </a>
             <a href="/" className=" cursor-pointer">
               <img src={instagram} className="" alt='arrow icon' width={30} />
-              Instagram
             </a>
             <a href="/" className=" cursor-pointer">
               <img src={twitter} className="" alt='arrow icon' width={30} />
-              Twitter
             </a>
           </div>
         </div>
       </div>
       <div className="relative w-11/12 flex flex-col items-start max-xl:padding-x pt-28">
-        <div className="flex flex-col align-middle  justify-end bg-gray-300 w-full h-full rounded-lg">
-          <div className="hidden md:block">
-            <div className="w-[100px] h-[100px] flex items-center justify-center rounded-full bg-white absolute left-16 bottom-[62%] max-lg:left-24 animate-float01">
+        <div className="flex flex-col align-middle shape justify-end w-full h-full rounded-lg max-md:p-0">
+          
+          <img src={profile} className=" w-full pt-10 px-10 max-md:p-0" alt='arrow icon' width={65} />
+        </div>
+        <div className="hidden md:block">
+            <div className="w-[100px] h-[100px] flex items-center justify-center rounded-full border-2 border-[#00d8ff] absolute left-16 bottom-[62%] max-lg:left-24 animate-float01">
               <img src={react} className="w-62" alt='arrow icon' width={65} />
             </div>
-            <div className="w-[120px] h-[120px] flex items-center justify-center rounded-full bg-white absolute left-[70%] bottom-[48%] animate-float02">
+            <div className="w-[120px] h-[120px] flex items-center justify-center rounded-full border-2 border-[#FD481D] absolute left-[70%] bottom-[48%] animate-float02">
               <img src={laravel} className="w-65" alt='arrow icon' width={70} />
             </div>
-            <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full bg-white absolute left-[70%] bottom-[75%] animate-float03">
+            <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full border-2 border-yellow-400 absolute left-[70%] bottom-[75%] animate-float03">
               <img src={python} className="w-62" alt='arrow icon' width={65} />
             </div>
           </div>
-          <img src={profile} className=" w-full pt-10 px-10 z-10" alt='arrow icon' width={65} />
-        </div>
       </div>
    </section>
         

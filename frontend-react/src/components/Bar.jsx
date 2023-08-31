@@ -6,7 +6,7 @@ import { star } from "../assets/icons";
 const Bar = () => {
   return (
     <section className='bg-gradient-to-br linearGradient'>
-            <div className='bg-[#262626] w-full  h-20 transform skew-y-1 flex flex-row items-center justify-between'>
+            <div className='bg-[#262626] w-full  h-20 transform skew-y-[-0.5deg] flex flex-row items-center justify-between'>
             <Marquee>
                 <h2 className=' text-white text-2xl'>Front-end Developer</h2>
                 <img src={star} className="" alt='arrow icon' width={30} />

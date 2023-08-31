@@ -208,3 +208,8 @@ body{
 .linearGradient2 {
   background: linear-gradient(182deg, white, #f5f6ff);
 }
+
+.marquee {
+  display: flex;
+  gap: 6rem;
+}
