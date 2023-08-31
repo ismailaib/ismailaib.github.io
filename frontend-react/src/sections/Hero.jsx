@@ -2,6 +2,7 @@ import { arrowRight , facebook , instagram , twitter , profile , react , node , 
 
 const Hero = () => {
 
+
   return (
    <section id="Home" className="w-full grid xl:grid-cols-2	justify-center min-h-fit py-8 gap-10 max-container pb-0">
       <div
@@ -12,7 +13,6 @@ const Hero = () => {
           <span className="button5 text-xl max-2xl:text-sm transform scale-125 bg-indigo-700 flex align-middle h-fit text-white p-2 border rounded-full hover:scale-110 duration-300 cursor-pointer max-md:text-sm max-sm:hidden">Full stack Developer</span>
           <br />
         </h1>
-
         <h1 className="max-2xl:text-[3rem] text-[4rem]  flex flex-row gap-3 font-palanquin max-sm:text-[40px] max-sm:leading-[60px] font-bold">Ismail Aitbouhmad</h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
           Building website for over 2 years 

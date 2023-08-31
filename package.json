@@ -4,5 +4,8 @@
     "daisyui": "^3.6.3",
     "postcss": "^8.4.28",
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "scrollreveal": "^4.0.9"
   }
 }
