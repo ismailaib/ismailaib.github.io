@@ -1,13 +1,27 @@
-import React from 'react';
-import {aboutData} from '../constants';
+import React, { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
+import { aboutData } from '../constants';
 
 const About = () => {
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal('.reveal', {
+      duration: 1000,
+      distance: '30px',
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      reset: true,
+      delay: 200, // Delay between each card animation
+    });
+  }, []);
+
   return (
     <section className="">
       <h1 className="flex justify-center text-3xl font-semibold">About me</h1>
       <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-12 mt-20">
         {aboutData.map((skill, index) => (
-          <div key={index} className='bg-white p-4 rounded-xl'>
+          <div key={index} className='bg-white p-4 rounded-xl reveal' data-sal="slide-up">
             <img src={skill.icon} className="rounded-lg" alt={`icon ${index + 1}`} />
             <h2 className="pt-4 text-xl font-semibold">{skill.title}</h2>
             <p className="pt-4 text-gray-600">{skill.description}</p>

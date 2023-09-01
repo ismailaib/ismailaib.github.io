@@ -10,3 +10,4 @@ export {Hero,
     Projects,
     Contact,
 }
+

@@ -1,7 +1,37 @@
 import { arrowRight , facebook , instagram , twitter , profile , react , node , python , laravel} from "../assets/icons";
+import React, { useEffect, useRef ,useState} from 'react';
+import CountUp from 'react-countup';
+import anime from 'animejs';
 
 const Hero = () => {
-
+  
+  const [targetNumber, setTargetNumber] = useState(53);
+  const [targetNumber2, setTargetNumber2] = useState(89);
+  const buttonsRef = useRef(null);
+  const socialIconsRef = useRef(null);
+  
+  useEffect(() => {
+    const buttons = buttonsRef.current;
+    const socialIcons = socialIconsRef.current;
+  
+    anime({
+      targets: buttons,
+      translateY: [50, 0],
+      opacity: [0, 1],
+      duration: 1000,
+      delay:1000,
+      easing: 'easeOutExpo',
+    });
+  
+    anime({
+      targets: socialIcons,
+      translateX: [-50, 0],
+      opacity: [0, 1],
+      duration: 1000,
+      delay: 500,
+      easing: 'easeOutExpo',
+    });
+  }, []);
 
   return (
    <section id="Home" className="w-full grid xl:grid-cols-2	justify-center min-h-fit py-8 gap-10 max-container pb-0">
@@ -27,15 +57,15 @@ const Hero = () => {
         </div>
         <div className="grid py-10 xl:grid-cols-2	justify-start gap-10">
           <h2 className="text-3xl font-bold">
-            + 84
+          + <b><CountUp end={targetNumber} duration={2.5} /></b>
             <span className="text-xl font-normal"> Clients</span>
           </h2>
           <h2 className="text-3xl font-bold">
-            + 578
+          + <b><CountUp end={targetNumber2} duration={3} /></b>
             <span className="text-xl font-normal"> Project done </span>
           </h2>
         </div>
-        <div className="flex flex-col justify-between align-middle gap-5">
+        <div className="flex flex-col justify-between align-middle gap-5" ref={socialIconsRef}>
           <div className="flex flex-row gap-5">
             <a href="/" className=" cursor-pointer">
               <img src={facebook} className="" alt='arrow icon' width={30} />
@@ -52,17 +82,17 @@ const Hero = () => {
       <div className="relative w-11/12 flex flex-col items-start max-xl:padding-x pt-28">
         <div className="flex flex-col align-middle shape justify-end w-full h-full rounded-lg max-md:p-0">
           
-          <img src={profile} className=" w-full pt-10 px-10 max-md:p-0" alt='arrow icon' width={65} />
+          <img ref={buttonsRef} src={profile} className=" w-full pt-10 px-10 max-md:p-0" alt='arrow icon' width={65} />
         </div>
         <div className="hidden md:block">
-            <div className="w-[100px] h-[100px] flex items-center justify-center rounded-full border-2 border-[#00d8ff] absolute left-16 bottom-[62%] max-lg:left-24 animate-float01">
+            <div ref={socialIconsRef} className="w-[100px] h-[100px] flex items-center justify-center rounded-full border-2 border-[#00d8ff] absolute left-16 bottom-[62%] max-lg:left-24 animate-float01">
               <img src={react} className="w-62" alt='arrow icon' width={65} />
             </div>
-            <div className="w-[120px] h-[120px] flex items-center justify-center rounded-full border-2 border-[#FD481D] absolute left-[70%] bottom-[48%] animate-float02">
+            <div ref={socialIconsRef} className="w-[120px] h-[120px] flex items-center justify-center rounded-full border-2 border-[#FD481D] absolute left-[70%] bottom-[48%] animate-float02">
               <img src={laravel} className="w-65" alt='arrow icon' width={70} />
             </div>
-            <div className="w-[80px] h-[80px] flex items-center justify-center rounded-full border-2 border-yellow-400 absolute left-[70%] bottom-[75%] animate-float03">
-              <img src={python} className="w-62" alt='arrow icon' width={65} />
+            <div ref={socialIconsRef} className="w-[80px] h-[80px] flex items-center justify-center rounded-full border-2 border-yellow-400 absolute left-[70%] bottom-[75%] animate-float03">
+              <img  src={python} className="w-62" alt='arrow icon' width={65} />
             </div>
           </div>
       </div>
