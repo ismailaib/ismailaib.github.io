@@ -1,8 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect , useState } from 'react';
 import ScrollReveal from 'scrollreveal';
-import { aboutData } from '../constants';
+import { urlFor, client } from "../client";
+
+  
+
 
 const About = () => {
+
+  const [abouts , setAbouts] = useState([]);
+
+  useEffect(() => {
+    client
+      .fetch('*[_type == "about"]')
+      .then((data) => setAbouts(data))
+      .catch((error) => console.error('Error fetching data:', error));
+  }, []);
+
   useEffect(() => {
     const sr = ScrollReveal();
 
@@ -12,19 +25,19 @@ const About = () => {
       easing: 'ease-in-out',
       origin: 'bottom',
       reset: true,
-      delay: 200, // Delay between each card animation
+      delay: 200,
     });
   }, []);
 
   return (
     <section className="">
       <h1 className="flex justify-center text-3xl font-semibold">About me</h1>
-      <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-12 mt-20">
-        {aboutData.map((skill, index) => (
-          <div key={index} className='bg-white p-4 rounded-xl reveal' data-sal="slide-up">
-            <img src={skill.icon} className="rounded-lg" alt={`icon ${index + 1}`} />
-            <h2 className="pt-4 text-xl font-semibold">{skill.title}</h2>
-            <p className="pt-4 text-gray-600">{skill.description}</p>
+      <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-12 mt-20 reveal">
+        {abouts.map((about, index) => (
+          <div key={index} className='bg-white p-4 rounded-xl' data-sal="slide-up">
+            <img src={urlFor(about.image)} className="rounded-lg" alt={`icon ${index + 1}`} />
+            <h2 className="pt-4 text-xl font-semibold">{about.title}</h2>
+            <p className="pt-4 text-gray-600">{about.description}</p>
             <div className="pt-4">
               <div className="relative pt-1">
                 <div className="flex mb-2 items-center justify-between">
@@ -35,13 +48,13 @@ const About = () => {
                   </div>
                   <div className="text-right">
                     <span className="text-xs font-semibold inline-block text-[#FD481D]">
-                      {skill.skillLevel}%
+                      {about.skill}%
                     </span>
                   </div>
                 </div>
                 <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-red-200">
                   <div
-                    style={{ width: `${skill.skillLevel}%` }}
+                    style={{ width: `${about.skill}%` }}
                     className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#FD481D]"
                   ></div>
                 </div>

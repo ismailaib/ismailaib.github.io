@@ -75,7 +75,7 @@ const Projects = () => {
       <div className='flex align-middle items-center justify-center transform translate-y-[-100px] reveal'>
         <a href='https://github.com/ismailaib' className="flex items-center text-lg font-bold text-[#FD481D] hover:scale-110 gap-2 duration-300">
           See All Projects
-          <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform rotate-[-45deg]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+          <svg width="20px" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 transform rotate-[-45deg]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
           </svg>
         </a>
