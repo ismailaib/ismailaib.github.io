@@ -1,6 +1,5 @@
 import React, { useEffect , useState } from 'react';
 import ScrollReveal from 'scrollreveal';
-import { eventData } from '../constants';
 import { urlFor, client } from "../client";
 
 const Skills = () => {

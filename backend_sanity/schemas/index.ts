@@ -3,8 +3,12 @@ import hero from './heros'
 import about from './abouts'
 import skill from './skills'
 import event from './events'
+import project from './projects'
+import contact from './contact'
 
 
 
 
-export const schemaTypes = [hero, about, skill, event]
+
+
+export const schemaTypes = [hero, about, skill, event, project, contact]
