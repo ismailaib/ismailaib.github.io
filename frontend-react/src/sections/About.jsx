@@ -24,7 +24,7 @@ const About = () => {
       distance: '30px',
       easing: 'ease-in-out',
       origin: 'bottom',
-      reset: true,
+      reset: false,
       delay: 200,
     });
   }, []);

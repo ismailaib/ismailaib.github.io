@@ -1,4 +1,4 @@
-import { arrowRight , facebook , instagram , twitter , profile , react , node , python , laravel} from "../assets/icons";
+import { arrowRight , linkedin , whatsapp , github} from "../assets/icons";
 import React, { useEffect, useRef ,useState} from 'react';
 import CountUp from 'react-countup';
 import anime from 'animejs';
@@ -68,12 +68,16 @@ const Hero = () => {
         ))}
 
 
-        <div className="flex gap-9">
-          <button className="py-4 px-8 rounded-none bg-[#FD481D] text-white font-bold text-md hover:bg-transparent border-2 border-[#FD481D] duration-300 hover:text-[#FD481D]">Hire me</button>
-          <button className="flex items-center text-lg font-bold text-[#FD481D] hover:scale-110 duration-300">
-            Projects
-            <img src={arrowRight} className="rotate-[-45deg]" alt='arrow icon' width={45} />
-          </button>
+        <div className="flex gap-9 items-center">
+          <a href="https://github.com/ismailaib">
+            <button className="py-4 px-8 rounded-none bg-[#FD481D] text-white font-bold text-md hover:bg-transparent border-2 border-[#FD481D] duration-300 hover:text-[#FD481D]">Hire me</button>
+          </a>
+          <a href="https://github.com/ismailaib?tab=repositories">
+            <button className="flex items-center text-lg font-bold text-[#FD481D] hover:scale-110 duration-300">
+              Projects
+              <img src={arrowRight} className="rotate-[-45deg]" alt='arrow icon' width={45} />
+            </button>
+          </a>
         </div>
         <div className="grid py-10 xl:grid-cols-2	justify-start gap-10">
           <h2 className="text-3xl font-bold">
@@ -86,17 +90,21 @@ const Hero = () => {
           </h2>
         </div>
         <div className="flex flex-col justify-between align-middle gap-5" ref={socialIconsRef}>
-          <div className="flex flex-row gap-5">
-            <a href="/" className=" cursor-pointer">
-              <img src={facebook} className="" alt='arrow icon' width={30} />
+        {heros.map((hero, index) => (
+
+          <div key={index} className="flex flex-row gap-5">
+            <a href={hero.github} className=" cursor-pointer">
+              <img src={github} className="" alt='arrow icon' width={30} />
             </a>
-            <a href="/" className=" cursor-pointer">
-              <img src={instagram} className="" alt='arrow icon' width={30} />
+            <a href={hero.linkedin} className=" cursor-pointer">
+              <img src={linkedin} className="" alt='arrow icon' width={34} />
             </a>
-            <a href="/" className=" cursor-pointer">
-              <img src={twitter} className="" alt='arrow icon' width={30} />
+            <a href={hero.whatsapp} className=" cursor-pointer">
+              <img src={whatsapp} className="" alt='arrow icon' width={30} />
             </a>
           </div>
+        ))}
+
         </div>
       </div>
       <div className="relative w-11/12 flex flex-col items-start max-xl:padding-x pt-28">
@@ -106,7 +114,7 @@ const Hero = () => {
           </div>
         ))}
           {heros.map((hero, index) => (
-            <div key={index} className="hidden md:block">
+            <div key={index} className="hidden sm:block">
               <div ref={socialIconsRef} className="w-[100px] h-[100px] flex items-center justify-center rounded-full border-2 border-[#00d8ff] absolute left-16 bottom-[62%] max-lg:left-24 animate-float01">
                 <img src={urlFor(hero.icon2)} className="w-62" alt='arrow icon' width={65} />
               </div>
@@ -118,9 +126,7 @@ const Hero = () => {
               </div>
             </div>
           ))}
-
       </div>
-      
    </section>
         
   );

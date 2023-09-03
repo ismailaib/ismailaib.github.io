@@ -52,6 +52,21 @@ export default {
             name: 'icon3',
             title: 'Your Last icon Here',
             type: 'image',
+        },
+        {
+            name: 'github',
+            title: 'Your Github Link Here',
+            type: 'string',
+        },
+        {
+            name: 'linkedin',
+            title: 'Your Linkedin Link Here',
+            type: 'string',
+        },
+        {
+            name: 'whatsapp',
+            title: 'Your Whatsapp Link Here',
+            type: 'string',
         }
     ],
 }

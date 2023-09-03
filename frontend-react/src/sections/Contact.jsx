@@ -35,7 +35,6 @@ const Contact = () => {
   return (
     <div className="flex flex-col gap-20 align-middle justify-center items-center">
       <h1 className="flex justify-center text-3xl font-semibold">contact me</h1>
-      {!isFormSubmitted ? (
       <form className="space-y-6 w-[60%] max-lg:w-full">
         <div>
           <input
@@ -79,20 +78,13 @@ const Contact = () => {
         <div className='flex flex-row align-middle items-center w-full justify-center'>
           <button
             onClick={handleSubmit}
-            type="button"
+            type="submit"
             className="group relative w-fit px-10 py-4 flex justify-center border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             {!loading ? 'Send Message' : 'Sending...'}
           </button>
         </div>
       </form>
-      ) : (
-        <div className='flex align-middle justify-center items-center min-h-[70vh]'>
-          <h3 className="text-3xl">
-            Thank you for getting in touch!
-          </h3>
-        </div>
-      )}
     </div>
   );
 }
